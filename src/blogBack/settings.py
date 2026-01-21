@@ -11,9 +11,12 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# print("BASE_DIR:", BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -48,14 +51,15 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+ 
 ROOT_URLCONF = 'blogBack.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            "/home/theodore-samba/All_Projet/My_Projets/myBlog/src/blogBack/templates",
+       
+            os.path.join(BASE_DIR, 'blogBack', 'templates', 'blog'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
