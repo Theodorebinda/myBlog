@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Blog Personnel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .post-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-2xl font-bold text-indigo-600">Mon Blog</div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#" class="text-indigo-600 font-medium">Accueil</a>
+            <a href="#" class="text-gray-600 hover:text-indigo-600">Articles</a>
+            <a href="#" class="text-gray-600 hover:text-indigo-600">À propos</a>
+            <a href="#" class="text-gray-600 hover:text-indigo-600">Contact</a>
+          </div>
+          <div class="md:hidden">
+            <button class="text-gray-600">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white py-20">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Bienvenue sur mon Blog
+        </h1>
+        <p class="text-xl mb-8">
+          Découvrez mes réflexions, tutoriels et partages sur le développement
+          web et au-delà.
+        </p>
+        <a
+          href="#articles"
+          class="bg-white text-indigo-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300"
+        >
+          Lire les articles <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Featured Articles -->
+    <section id="articles" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Derniers Articles</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Article Card 1 -->
+          <div
+            class="post-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="https://source.unsplash.com/random/600x400/?programming"
+              alt="Article 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <span class="text-sm text-indigo-600">Développement Web</span>
+              <h3 class="text-xl font-bold my-2">
+                Les meilleures pratiques en 2024
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Découvrez les dernières tendances et bonnes pratiques en
+                développement web pour 2024.
+              </p>
+              <a href="#" class="text-indigo-600 font-medium hover:underline"
+                >Lire la suite →</a
+              >
+            </div>
+          </div>
+
+          <!-- Article Card 2 -->
+          <div
+            class="post-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="https://source.unsplash.com/random/600x400/?coding"
+              alt="Article 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <span class="text-sm text-indigo-600">Tutoriel</span>
+              <h3 class="text-xl font-bold my-2">Débuter avec Django</h3>
+              <p class="text-gray-600 mb-4">
+                Un guide complet pour les débutants qui veulent se lancer avec
+                le framework Django.
+              </p>
+              <a href="#" class="text-indigo-600 font-medium hover:underline"
+                >Lire la suite →</a
+              >
+            </div>
+          </div>
+
+          <!-- Article Card 3 -->
+          <div
+            class="post-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="https://source.unsplash.com/random/600x400/?technology"
+              alt="Article 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <span class="text-sm text-indigo-600">Technologie</span>
+              <h3 class="text-xl font-bold my-2">L'avenir de l'IA</h3>
+              <p class="text-gray-600 mb-4">
+                Comment l'intelligence artificielle va transformer notre
+                quotidien dans les années à venir.
+              </p>
+              <a href="#" class="text-indigo-600 font-medium hover:underline"
+                >Lire la suite →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full font-medium hover:bg-indigo-700 transition duration-300"
+          >
+            Voir tous les articles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h2 class="text-2xl font-bold mb-4">Restez informé</h2>
+        <p class="text-gray-600 mb-6">
+          Inscrivez-vous à notre newsletter pour recevoir les derniers articles
+          et mises à jour.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="Votre adresse email"
+            class="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <button
+            class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+          >
+            S'inscrire
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="col-span-2">
+            <h3 class="text-xl font-bold mb-4">Mon Blog</h3>
+            <p class="text-gray-400">
+              Partage de connaissances et d'expériences sur le développement
+              web, la technologie et plus encore.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Navigation</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Articles</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">À propos</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Contact</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-2"></i> contact@monblog.com
+              </li>
+              <li class="flex items-center">
+                <i class="fab fa-twitter mr-2"></i> @monblog
+              </li>
+              <li class="flex items-center">
+                <i class="fab fa-github mr-2"></i> github.com/monblog
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple JavaScript pour le menu mobile
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.querySelector(".md\:hidden button");
+        const mobileMenu = document.querySelector(".md\:hidden + .md\:flex");
+
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

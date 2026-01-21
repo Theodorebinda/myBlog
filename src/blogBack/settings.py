@@ -54,7 +54,9 @@ ROOT_URLCONF = 'blogBack.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            "/home/theodore-samba/All_Projet/My_Projets/myBlog/src/blogBack/templates",
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
