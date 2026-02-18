@@ -17,7 +17,7 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-    # Commentaire pour tester le commit
+    # Commentaire pour tester le commi
 
 
 if __name__ == '__main__':
